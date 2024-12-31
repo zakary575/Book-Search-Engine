@@ -8,9 +8,10 @@ type User{
 }
     
 type Book{
-    bookId:String
+    _id:ID
     authors:String
     description:String
+    bookId:String
     image:String
     link:String
     title:String
@@ -21,4 +22,11 @@ type Auth {
     user: User
 }
 
-`
+  input InputBook {
+    bookId: String
+    authors: [String]
+    title: String
+    description: String
+    image: String
+    link: String
+  }`
