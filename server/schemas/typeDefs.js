@@ -8,10 +8,9 @@ type User{
 }
     
 type Book{
-    _id:ID
+    bookId:String
     authors:String
     description:String
-    bookId:String
     image:String
     link:String
     title:String
